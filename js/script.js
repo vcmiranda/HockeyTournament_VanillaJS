@@ -10,3 +10,10 @@ window.onscroll = () => {
 window.addEventListener("hashchange", function () {
   window.scrollTo(0, window.scrollY - 100);
 });
+
+function clearFields() {
+  document.getElementById("fname").value = "";
+  document.getElementById("lname").value = "";
+  document.getElementById("topic").value = "";
+  document.getElementById("message").value = "";
+};
