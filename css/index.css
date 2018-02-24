@@ -1,0 +1,416 @@
+header, nav, main, section, footer {display: block;}
+
+html, body, header {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Mukta Malar', sans-serif;
+}
+
+/*********** header ************/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0);
+  padding: 10px;
+}
+
+#headerContainer img {
+  width: 30px;
+  height: auto;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#links ul {
+	list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#links a {
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.nav-btn {
+  transition: all 150ms linear;
+}
+
+.nav-btn:hover {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: rgba(255,255,255,0.3); 
+  transition: all 250ms linear;
+}
+
+#social {
+  width: 200px;
+}
+
+#social ul {
+	list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#social a {
+  display: block;
+  width: 40px;
+  height: 30px;
+}
+
+.scroll {
+  background-color: #111;
+}
+
+#videoContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#videoContainer video {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+#videoContainer div {
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  transform:translateY(-50%);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.4);
+}
+
+#videoContainer h1 {
+  font-size: 4em;
+}
+
+#videoContainer h3 {
+  font-size: 2em;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+/*********** info section ***********/
+#info {
+  line-height: 1.5;
+  width: 80%;
+  margin: 50px auto;
+}
+
+#info h4 {
+  font-size: 1.5em;
+  color: orange;
+  text-transform: uppercase;
+}
+
+#info h5 {
+  font-size: 1.2em;
+  color: orange;
+  text-transform: uppercase;
+}
+
+#info h6 {
+  font-size: 1em;
+  color: orange;
+  text-transform: uppercase;
+}
+
+#info li {
+  font-size: 1em;
+  color: orange;
+  text-transform: uppercase;
+}
+
+#info p {
+  font-size: 1em;
+}
+
+#info span {
+  color: orange;
+  text-decoration: underline;
+}
+
+/************* events section ***************/
+#events {
+  background-color: #ddd;
+  padding: 50px 0;
+}
+
+#gallery {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ddd;
+}
+
+#gallery h4 {
+  font-size: 1.5em;
+  color: orange;
+  text-transform: uppercase;
+}
+
+#gallery ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+#gallery li {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+#gallery li img {
+  transform: translateY(0);
+  transition: all 0.5s;
+  width: 180px;
+  height: 360px;
+}
+
+#gallery li img:hover{
+  transform: translateY(-200px);
+}
+
+/*********** contact section ***********/
+#contact {
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact h4 {
+  font-size: 1.5em;
+  color: orange;
+  text-transform: uppercase;
+}
+
+#form {
+  width: 50%;
+  margin: 50px auto;
+  border-radius: 5px;
+  background-color: #ddd;
+  padding: 20px 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #111;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #666;
+}
+
+/********** footer ************/
+footer {
+  background-color: #111;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+  padding: 5px;
+}
+
+
+/*********** sprites ***********/
+
+#facebook {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat 0 0;
+	overflow: hidden;
+}
+
+#facebook:hover {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat 0 -30px;
+	overflow: hidden;
+}
+
+#instagram {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat -40px 0;
+	overflow: hidden;
+}
+
+#instagram:hover {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat -40px -30px;
+	overflow: hidden;
+}
+
+#twitter {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat -80px 0;
+	overflow: hidden;
+}
+
+#twitter:hover {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat -80px -30px;
+	overflow: hidden;
+}
+
+#youtube {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat -120px 0;
+	overflow: hidden;
+}
+
+#youtube:hover {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat -120px -30px;
+	overflow: hidden;
+}
+
+#snapchat {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat -160px 0;
+	overflow: hidden;
+}
+
+#snapchat:hover {
+	background: url(../images/sprites/sprites-assets/sprites.png) no-repeat -160px -30px;
+	overflow: hidden;
+}
+
+
+/************** medium screen media query 1024px***************/
+@media screen and (max-width: 1024px) {
+  #videoContainer h1 {
+    font-size: 3em;
+  }
+  
+  #videoContainer h3 {
+    font-size: 1.5em;
+    width: 50%;
+  }
+
+  #form {
+    width: 70%;
+    margin: 20px auto;
+  }
+}
+
+
+/************** medium screen media query 768px***************/
+@media screen and (max-width: 768px) {
+  #links a {
+    font-size: 0.7em;
+    padding: 0 10px;
+  }
+
+  #videoContainer h1 {
+    font-size: 2.5em;
+  }
+  
+  #videoContainer h3 {
+    width: 80%;
+  }
+
+  #social ul {
+    display: none;
+  }
+
+  #info {
+    line-height: 1.2;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #events {
+    padding: 20px 0;
+  }
+
+  #gallery {
+    width: 90%;
+    background-color: #ddd;
+  }
+  
+  #contact {
+    padding: 20px 0;
+    width: 90%;
+  }
+
+  #form {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  footer p {
+    font-size: 0.7em;
+  }
+}
+
+
+/************** medium screen media query 400px***************/
+@media screen and (max-width: 400px) {
+  #social {
+    width: 200px;
+  }
+
+  #videoContainer h1 {
+    font-size: 1.5em;
+  }
+  
+  #videoContainer h3 {
+    font-size: 0.8em;
+    width: 80%;
+  }
+
+  #contact {
+    padding: 0 0 20px 0;
+  }
+
+  #form {
+    width: 90%;
+    margin: 0px auto;
+  }
+}
